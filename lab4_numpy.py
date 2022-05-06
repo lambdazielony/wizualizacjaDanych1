@@ -42,36 +42,48 @@ def generujWektor(dlugosc):
 generujWektor(10)
 
 # #Zad6
-# print('Zadanie 6.')
-# lista1 = []
-# lista2 = []
-# lista3 = []
-#
-# wyraz1 = 'jedzie'
-# wyraz2 = 'grzes'
-# wyraz3 = 'rowerem'
-#
-# for i in wyraz1:
-#     lista1.append(i)
-#
-# for i in wyraz2:
-#     lista2.append(i)
-#
-# for i in wyraz3:
-#     lista3.append(i)
-#
-# m1 = np.array(lista1)
-# m2 = np.array(lista2)
-# m3 = np.array(lista3)
-#
-# a = np.chararray((10, 10))
-# a[:] = ' '
-# np.diag(a, )
-#
-#
-#
-# print(a)
+print('Zadanie 6.')
+lista1 = []
+lista2 = []
+lista3 = []
 
+wyraz1 = 'jedzie'
+wyraz2 = 'grzes'
+wyraz3 = 'rowerem'
+
+for i in wyraz1:
+    lista1.append(i)
+
+for i in wyraz2:
+    lista2.append(i)
+
+for i in wyraz3:
+    lista3.append(i)
+
+m1 = np.array(lista1)
+m2 = np.array(lista2)
+m3 = np.array(lista3)
+
+print(m1)
+print(m2)
+print(m3)
+
+m21 = np.flip(m2)
+
+
+matrix = np.chararray((10, 10))
+matrix[:] = ' '
+matrix[0:6, 8] = m1
+matrix[8, 0:5] = m21
+matrix[0, 0] = m3[0]
+matrix[1, 1] = m3[1]
+matrix[2, 2] = m3[2]
+matrix[3, 3] = m3[3]
+matrix[4, 4] = m3[4]
+matrix[5, 5] = m3[5]
+matrix[6, 6] = m3[6]
+
+print(matrix)
 
 #Zad7
 print('Zadanie 7.')
@@ -93,7 +105,7 @@ def dzielTablice(tab, kierunek):
     else:
         print('Nie mozna podzielic tablicy na 2 rowne czesci!')
 
-a = np.arange(25).reshape(5, 5)
+a = np.arange(100).reshape(10, 10)
 print(a)
 dzielTablice(a, 0)
 
