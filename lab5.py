@@ -169,7 +169,7 @@ from PIL import Image
 # fig, axs = pl.subplots(3, 2)
 # print(type(fig))
 # print(type(axs))
-#
+##
 #
 # axs[0, 0].plot(x1, y1, 'g-')
 # axs[0, 0].set_xlabel('x')
