@@ -94,7 +94,7 @@ print(df)
 seria = df.groupby('Sprzedawca')['Sprzedawca'].size()
 print(seria)
 explode = np.random.randint(0, 5, seria.size) / 10
-plt.pie(x = seria, labels = seria.keys(), shadow=True, explode=explode)
+plt.pie(x = seria, labels = seria.keys(), shadow=True, explode=explode, autopct=lambda pct: "{:2f}%".format(pct))
 plt.show()
 
 
