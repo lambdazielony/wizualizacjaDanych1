@@ -236,10 +236,3 @@ plt.ylabel('Prawdopodobieństwa')
 plt.title('Historgram')
 
 plt.show()
-
-
-
-
-
-
-
